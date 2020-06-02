@@ -80,7 +80,6 @@ numscale = {
 }
 
 # Create our blank bar chart
-num_graph = {}
 fig = px.bar()
 fig.update_layout(
     title_text='Number of Publications by Author',
