@@ -21,4 +21,4 @@ GSQL queries built with [TigerGraph Cloud.](https://www.tigergraph.com/cloud/)
 [TigerGraph GSQL](https://docs.tigergraph.com/)
 
 ## How to Use
-For a full guide on how this dashboard was build, check out the [blog I wrote.]()
+For a full guide on how this dashboard was build, check out the [blog I wrote.](https://towardsdatascience.com/developing-a-dynamic-author-search-of-covid-19-articles-using-plotly-dash-tigergraph-part-4-34e240882a06)
