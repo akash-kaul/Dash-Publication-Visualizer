@@ -1,0 +1,10 @@
+CREATE QUERY GrabPubs() FOR GRAPH MyGraph { 
+  /* Grab all publications with their relevant information */ 
+  Seed = {PUBLICATION.*};
+	
+	Pubs = SELECT s    
+	        
+	          FROM Seed:s -() - :t;
+	
+	PRINT Pubs[Pubs.id, Pubs.pub_title, Pubs.pub_url];
+}
