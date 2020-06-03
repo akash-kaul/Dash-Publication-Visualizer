@@ -1,0 +1,16 @@
+CREATE QUERY AuthorSearchDash() FOR GRAPH MyGraph { 
+  /* This querry grabs all authors in our database */ 
+ 
+  SumAccum<INT> @pubNum;
+	ListAccum<VERTEX> @pubList;
+	Seed={AUTHOR.*};
+	
+	Author = SELECT a
+	            FROM Seed:a-()-:t
+	            
+	            ACCUM a.@pubNum +=1, a.@pubList +=t
+	
+	            ORDER BY a.@pubNum DESC;
+
+	PRINT Author;
+}
